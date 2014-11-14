@@ -10,7 +10,7 @@ def pad_string(string, width):
 
 def char_width(char):
     width = unicodedata.east_asian_width(char)
-    if width == 'Na':
+    if width in ['Na', 'A', 'N']:
         return 1
     else:
         return 2
