@@ -1,4 +1,5 @@
 import unicodedata
+import re
 
 COL_WIDTH = [40, 20, 15]
 
@@ -48,7 +49,7 @@ def print_row(tweet_data):
     for i in range(lines):
         for n, col in enumerate(tweet_data):
             s = col[i] if len(col) > i else ''
-            print '|' + pad_string(s, COL_WIDTH[n]),
+            print '|' + pad_string(s.replace('\n', ''), COL_WIDTH[n]),
         print '|'
 
 def print_header():
