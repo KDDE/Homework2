@@ -6,7 +6,8 @@ To run this code, run:
 `$python IKDDhw2.py`
 
 The output is presented with a table. For the best result, use a terminal
-with 80 columns or higher, and use monospace fonts.
+with 80 columns or higher, and use monospace fonts. Some ambiguous width
+character might cause the align problem in the table.
 
 Note: This program is written in python 2 and requires `psycopg2` package.
 
