@@ -11,9 +11,7 @@ import codecs
 import zipfile
 import numpy as np
 
-os.chdir("./data")
-#zf = zipfile.ZipFile('test.zip')
-#print(zf.namelist)
+os.chdir("./webpage_data_5")
 
 markov = np.matrix([[0.0,0.0,0.0,0.0,0.0],
 		    [0.0,0.0,0.0,0.0,0.0],
